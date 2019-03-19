@@ -1,11 +1,11 @@
 window.onload=function(){
 	let canvas = document.getElementById("solar")
-    let ctx = canvas.getContext("2d");
+        let ctx = canvas.getContext("2d");
 	draw(ctx);
 }
 function draw(ctx){
     requestAnimationFrame(function step(){
-        drawDial(ctx); //绘制表盘
+	drawDial(ctx); //绘制表盘
         drawAllHands(ctx); //绘制时分秒针
         requestAnimationFrame(step);
     });
